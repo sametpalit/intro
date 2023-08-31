@@ -1,16 +1,21 @@
 /* Reset some default styles */
+@font-face {
+  font-family: poppins;
+  src: url(/Poppins/Poppins-Regular.ttf);
+}
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: poppins, sans-serif;
   }
   
   nav {
     background-color: #4E598C;
     color: #fff;
+    font-size: xx-large;
   }
   
 
@@ -33,11 +38,13 @@ body, h1, h2, h3, p, ul, li {
   
   nav a:hover {
     background-color: #757fb2;
+    border-radius: 15px;
   }
   
   /* Highlighting the current page */
   nav .current-page {
     background-color: #757fb2;
+    border-radius: 15px;
   }
   /* ... (existing styles) */
   
@@ -56,6 +63,8 @@ body, h1, h2, h3, p, ul, li {
   }
   section{
     text-align: center;
+      padding-left: 390px;
+      padding-right: 390px;
   }
   .introductie {
     margin-bottom: 20px;

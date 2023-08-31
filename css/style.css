@@ -38,11 +38,14 @@ body, h1, h2, h3, p, ul, li {
   
   nav a:hover {
     background-color: #757fb2;
+    border-radius: 15px;
   }
   
   /* Highlighting the current page */
   nav .current-page {
     background-color: #757fb2;
+    border-radius: 15px;
+
   }
   /* ... (existing styles) */
   
