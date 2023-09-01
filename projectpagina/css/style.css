@@ -85,3 +85,16 @@ body, h1, h2, h3, p, ul, li {
     left:0;
     z-index:-1;
   }
+  .flexbox{
+    justify-content: center;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    }
+    Div1{
+    margin: 10px;
+    width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.15); 
+    }
