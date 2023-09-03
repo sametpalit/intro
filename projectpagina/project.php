@@ -29,7 +29,31 @@
       </div>
     </section>
   </main>
-  
+  <?php
+
+class MyDB extends SQLite3
+{
+    function __construct()
+    {
+        $this->open('db/database.db');
+    }
+}
+
+$sql = <<<EOF
+SELECT * from Projecten;
+EOF;
+$db = new MyDB();
+$ret = $db->query($sql);
+while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
+    echo "<project onclick=\"window.open('{$row['url']}', '_blank')\">";
+    echo "<img src='media/{$row['image']}'>";
+    echo "<div class='title'>{$row['title']}</div>";
+    echo "<div class='desc'>{$row['desc']}</div>";
+    echo "</project>";
+}
+$db->close();
+
+?>
   <footer>
     <p>&copy; 2023 Samet Palit. All rights reserved.</p>
   </footer>
