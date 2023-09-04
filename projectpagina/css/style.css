@@ -79,22 +79,31 @@ body, h1, h2, h3, p, ul, li {
     color: #fff;
     font-size: xx-large;
   }
-  canvas{
-    position: absolute;
-    top:0;
-    left:0;
-    z-index:-1;
-  }
-  .flexbox{
-    justify-content: center;
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-    flex-flow: row wrap;
+
+    .myC{
+      display: flex; /* Display projects next to each other */
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 300px;
+      width: 400px; /* Set a fixed width for each project block */
+      margin: 10px; /* Add some spacing between the projects */
+      padding: 20px; /* Add padding to the project block */
+      border: 1px solid #ccc; /* Add a border for visual separation */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
     }
-    Div1{
-    margin: 10px;
-    width: 300px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.15); 
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+    
+    .title{
+      font-weight: bolder;
+      font-size: 25px;
+
+    }
+
+    .myC img{
+      width: 100px;
     }

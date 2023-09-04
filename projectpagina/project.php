@@ -17,18 +17,12 @@
   </nav>
   
   <header>
-    <h1>Samet Palit</h1>
-    <img src="fener.jpeg" id="image" width="600px">
+    <h1>Mijn projecten op school</h1>
   </header>
   
   <main>
     <section>
-      <h2>Introductie</h2>
-      <div class="introductie">
-        <p>Hallo daar! Ik ben Samet, een enthousiaste student en software developer. Ontdek mijn projecten en mijn reis in code op dit portfolio.</p>
-      </div>
     </section>
-  </main>
   <?php
 
 class MyDB extends SQLite3
@@ -40,20 +34,34 @@ class MyDB extends SQLite3
 }
 
 $sql = <<<EOF
-SELECT * from Projecten;
+SELECT * from projects;
 EOF;
 $db = new MyDB();
 $ret = $db->query($sql);
 while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
+?>
+<div class="myC">
+  <?php
+
     echo "<project onclick=\"window.open('{$row['url']}', '_blank')\">";
-    echo "<img src='media/{$row['image']}'>";
-    echo "<div class='title'>{$row['title']}</div>";
-    echo "<div class='desc'>{$row['desc']}</div>";
-    echo "</project>";
+    // echo "<img src='media/{$row['image']}'>";
+    // echo "<div class='title'>{$row['title']}</div>";
+    // echo "<div class='desc'>{$row['desc']}</div>";
+    // echo "</project>";
+
+    ?>
+ <img src='media/<?= $row['image'] ?>'>
+ <h1 class='title'><?=$row['title']?></h1>
+ <div class='desc'><?=$row['desc']?></div>
+ </project>
+</div>
+    <?php
 }
 $db->close();
 
 ?>
+</main>
+
   <footer>
     <p>&copy; 2023 Samet Palit. All rights reserved.</p>
   </footer>
