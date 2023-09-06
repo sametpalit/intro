@@ -77,7 +77,14 @@ body, h1, h2, h3, p, ul, li {
     padding: 10px;
     background-color: #4E598C;
     color: #fff;
-    font-size: xx-large;
+    font-weight: 200;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+
   }
 
     .myC{

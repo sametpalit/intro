@@ -41,12 +41,11 @@ body, h1, h2, h3, p, ul, li {
     border-radius: 15px;
   }
   
-  /* Highlighting the current page */
+
   nav .current-page {
     background-color: #757fb2;
     border-radius: 15px;
   }
-  /* ... (existing styles) */
   
   header {
     background-color: #FFF8F0;
@@ -68,6 +67,7 @@ body, h1, h2, h3, p, ul, li {
   }
   .introductie {
     margin-bottom: 20px;
+    text-align: left;
   }
   
   .introductie img {
@@ -79,4 +79,26 @@ body, h1, h2, h3, p, ul, li {
     padding: 10px;
     background-color: #4E598C;
     color: #fff;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+  }
+  
+
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4E598C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px; 
+  }
+  
+  .resume-button:hover {
+    background-color: #757fb2;
   }

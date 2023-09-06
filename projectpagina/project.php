@@ -10,9 +10,9 @@
   <nav>
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="/about/about.html">About</a></li>
-      <li><a href="project.html"class='current-page'>Projects</a></li>
-      <li><a href="/contact/contact.html">Contact</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="project.php"class='current-page'>Projects</a></li>
+      <li><a href="../contact/contact.php">Contact</a></li>
     </ul>
   </nav>
   

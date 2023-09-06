@@ -10,9 +10,9 @@
   <nav>
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="/about/about.html">About</a></li>
-      <li><a href="/projectpagina/project.php">Projects</a></li>
-      <li><a href="contact.html"class='current-page'>Contact</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="../projectpagina/project.php">Projects</a></li>
+      <li><a href="contact.php"class='current-page'>Contact</a></li>
     </ul>
   </nav>
   
@@ -22,7 +22,7 @@
   
   <main>
     <section>
-    <h1>Contact Us</h1>
+    <h1>Contact </h1>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST["name"];
@@ -30,43 +30,43 @@
         $phone = $_POST["phone"];
         $company = $_POST["company"];
         $message = $_POST["message"];
-
-        // Create the email message
-        $to = "your-email@example.com"; // Replace with your email address
-        $subject = "Contact Form Submission from $name";
-        $messageBody = "Name: $name\n";
-        $messageBody .= "Email: $email\n";
-        $messageBody .= "Phone Number: $phone\n";
-        $messageBody .= "Company Name: $company\n";
-        $messageBody .= "Message:\n$message";
-
-        // Send the email
-        $headers = "From: $email";
-        if (mail($to, $subject, $messageBody, $headers)) {
-            echo "<p style='text-align:center;'>Thank you for your message! We will get back to you soon.</p>";
-        } else {
-            echo "<p style='text-align:center;'>Oops! Something went wrong. Please try again later.</p>";
-        }
+       
+        $to = "089525@glr.nl"; 
+        $subject = "Nieuw formulier ingediend";
+        $body = "Naam: $name\n";
+        $body .= "E-mail: $email\n";
+        $body .= "Telefoonnummer: $phone\n";
+        $body .= "Bedrijfsnaam: $company\n";
+        $body .= "Bericht:\n$message";
+       
+        // Stuur de e-mail
+        mail($to, $subject, $body);
+       
+        // Toon een succesbericht
+        echo "<p class='bedankt'>Bedankt! Je formulier is succesvol ingediend.</p>";
     }
     ?>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="container">
+        <div class="form-container">
+            <div class="form">
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <input type="text" placeholder="Naam" name="name" id="name" required><br>
+   
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone"><br><br>
-
-        <label for="company">Company Name:</label>
-        <input type="text" id="company" name="company"><br><br>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
+                    <input type="email" placeholder="Email" name="email" id="email" required><br>
+   
+                    <input type="tel" placeholder="telefoonnummer (optioneel)" name="phone" id="phone"><br>
+   
+                    <input type="text" placeholder="Bedrijfsnaam (optioneel)" name="company" id="company"><br><br>
+   
+                    <label for="message">Bericht</label>
+                    <textarea name="message" placeholder="Bericht" id="message" rows="auto" required></textarea><br>
+   
+                    <input class="active"  type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
     </section>
   </main>
   

@@ -77,6 +77,13 @@ body, h1, h2, h3, p, ul, li {
     padding: 10px;
     background-color: #4E598C;
     color: #fff;
+    font-weight: 200;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   form {
@@ -98,7 +105,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -129,4 +136,12 @@ input[type="tel"],
 input[type="text"]#company {
     border: 1px solid #ddd;
     background-color: #f9f9f9;
+}
+main section h1{
+  margin-bottom: 55px;
+}
+.bedankt{
+  margin-bottom: 25px;
+
+
 }
