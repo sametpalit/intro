@@ -3,93 +3,103 @@
   font-family: poppins;
   src: url(../Poppins/Poppins-Regular.ttf);
 }
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: poppins, sans-serif;
-  }
-  
-  nav {
-    background-color: #4E598C;
-    color: #fff;
-    font-size: xx-large;
-  }
-  
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-  }
-  
-  nav a:hover {
-    background-color: #757fb2;
-    border-radius: 15px;
-  }
-  
-  /* Highlighting the current page */
-  nav .current-page {
-    background-color: #757fb2;
-    border-radius: 15px;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  /* ... (existing styles) */
-  
-  header {
-    background-color: #FFF8F0;
-    text-align: center;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  section{
-    text-align: center;
-  }
-  .introductie {
-    margin-bottom: 20px;
-  }
-  
-  .introductie img {
-    max-width: 100%;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4E598C;
-    color: #fff;
-    font-weight: 200;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+body {
+  font-family: poppins, sans-serif;
+}
 
-  }
-  canvas{
-    position: absolute;
-    top:0;
-    left:0;
-    z-index:-1;
-  }
+nav {
+  background-color: #4E598C;
+  color: #fff;
+  font-size: xx-large;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #757fb2;
+  border-radius: 15px;
+}
+
+
+nav .current-page {
+  background-color: #757fb2;
+  border-radius: 15px;
+
+}
+
+
+header {
+  background-color: #FFF8F0;
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  text-align: center;
+}
+
+.introductie {
+  margin-bottom: 20px;
+}
+
+.introductie img {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4E598C;
+  color: #fff;
+  font-weight: 200;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

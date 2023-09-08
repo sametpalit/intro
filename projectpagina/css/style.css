@@ -3,114 +3,131 @@
   font-family: poppins;
   src: url(/Poppins/Poppins-Regular.ttf);
 }
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: poppins, sans-serif;
-  }
-  
-  nav {
-    background-color: #4E598C;
-    color: #fff;
-    font-size: xx-large;
-  }
-  
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-  }
-  
-  nav a:hover {
-    background-color: #757fb2;
-    border-radius: 15px;
-  }
-  
-  /* Highlighting the current page */
-  nav .current-page {
-    background-color: #757fb2;
-    border-radius: 15px;
-  }
-  /* ... (existing styles) */
-  
-  header {
-    background-color: #FFF8F0;
-    text-align: center;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  section{
-    text-align: center;
-  }
-  .introductie {
-    margin-bottom: 20px;
-  }
-  
-  .introductie img {
-    max-width: 100%;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4E598C;
-    color: #fff;
-    font-weight: 200;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-  }
+body {
+  font-family: poppins, sans-serif;
+}
 
-    .myC{
-      display: flex; /* Display projects next to each other */
-      flex-direction: row;
-      flex-wrap: wrap;
-      height: 300px;
-      width: 400px; /* Set a fixed width for each project block */
-      margin: 10px; /* Add some spacing between the projects */
-      padding: 20px; /* Add padding to the project block */
-      border: 1px solid #ccc; /* Add a border for visual separation */
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-    }
+nav {
+  background-color: #4E598C;
+  color: #fff;
+  font-size: xx-large;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #757fb2;
+  border-radius: 15px;
+}
+
+
+nav .current-page {
+  background-color: #757fb2;
+  border-radius: 15px;
+}
+
+
+header {
+  background-color: #FFF8F0;
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  text-align: center;
+}
+
+.introductie {
+  margin-bottom: 20px;
+}
+
+.introductie img {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4E598C;
+  color: #fff;
+  font-weight: 200;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.myC {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.myC:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
 
 main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-    
-    .title{
-      font-weight: bolder;
-      font-size: 25px;
 
-    }
+.title {
+  font-weight: bolder;
+  font-size: 25px;
 
-    .myC img{
-      width: 100px;
-    }
+}
+
+.myC img {
+  width: 100px;
+}
